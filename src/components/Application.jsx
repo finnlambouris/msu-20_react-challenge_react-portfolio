@@ -1,9 +1,9 @@
-import forkYeah from "../../public/img/fork-yeah.png";
-import techBlog from "../../public/img/tech-blog.png";
-import boozyBitches from "../../public/img/boozy-bitches.png";
-import survivalGuide from "../../public/img/survival-guide.png";
-import weatherDashboard from "../../public/img/weather-dashboard.png";
-import codeQuiz from "../../public/img/code-quiz.png";
+import forkYeah from "/img/fork-yeah.png";
+import techBlog from "/img/tech-blog.png";
+import boozyBitches from "/img/boozy-bitches.png";
+import survivalGuide from "/img/survival-guide.png";
+import weatherDashboard from "/img/weather-dashboard.png";
+import codeQuiz from "/img/code-quiz.png";
 
 const applications = [
   {
@@ -54,16 +54,15 @@ const applications = [
 
 export default function Application() {
   return (
-    <>
-      <h2>My Developed Applications</h2>
+    <ul className="row g-4 list-unstyled">
       {applications.map((app) => (
-        <li>
+        <li className="col-md-4" key={app.title}>
           <h3>{app.title}</h3>
-          <img src={app.photo} alt={`A photo of ${app.title}`} />
-          <p><a href={app.deployedLink}>Deployed Application</a></p>
-          <p><a href={app.githubLink}>GitHub Repository</a></p>
+          <img src={app.photo} alt={`A photo of ${app.title}`} className="img-fluid" /> {/* Responsive image */}
+          <p><a href={app.deployedLink} className="btn btn-primary">Deployed Application</a></p>
+          <p><a href={app.githubLink} className="btn btn-primary">GitHub Repository</a></p>
         </li>
       ))}
-    </>
+    </ul>
   );
 }

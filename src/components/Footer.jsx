@@ -1,13 +1,19 @@
-import gitHub from "../../public/img/GitHub.png";
-import linkedin from "../../public/img/LinkedIn.png";
-import instagram from "../../public/img/Instagram.png"
+import gitHub from "/img/GitHub.png";
+import linkedin from "/img/LinkedIn.png";
+import instagram from "/img/Instagram.png"
 
 export default function Footer() {
     return (
-        <>
-            <a href="https://github.com/finntendoverse"><img src={gitHub} alt="GitHub icon"/></a>
-            <a href="https://github.com/finntendoverse"><img src={linkedin} alt="LinkedIn icon"/></a>
-            <a href="https://github.com/finntendoverse"><img src={instagram} alt="Instagram icon"/></a>
-        </>
+        <footer className="container d-flex flex-wrap justify-content-center align-items-center py-3 border-top">
+        <a href="https://github.com/finntendoverse" target="_blank">
+            <img src={gitHub} alt="GitHub icon" className="me-3" width="50" height="50" />
+        </a>
+        <a href="https://www.linkedin.com/in/finnlambouris" target="_blank">
+            <img src={linkedin} alt="LinkedIn icon" className="me-3" width="50" height="50" />
+        </a>
+        <a href="https://www.instagram.com/finnlambouris" target="_blank">
+            <img src={instagram} alt="Instagram icon" width="50" height="50" />
+        </a>
+        </footer>
     );
 }

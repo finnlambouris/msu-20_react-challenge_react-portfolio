@@ -2,11 +2,9 @@ import Application from "../components/Application.jsx"
 
 export default function PortfolioPage() {
     return (
-        <>
-            <h2>Portfolio</h2>
-            <ul>
-                <Application />
-            </ul>
-        </>
+        <div className="container">
+            <h2 className="h2">Portfolio</h2>
+            <Application />
+        </div>
     );
 }

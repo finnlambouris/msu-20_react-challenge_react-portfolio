@@ -51,36 +51,45 @@ function Form() {
 
   return (
     <>
-        <form onSubmit={handleFormSubmit}>
-        <input
+      <form onSubmit={handleFormSubmit} className="form-group">
+        <div className="mb-3">
+          <input
             value={name}
             name="name"
             onChange={handleInputChange}
             onBlur={handleClickAway}
             type="text"
             placeholder="name"
-        />
-        <input
+            className="form-control"
+          />
+        </div>
+        <div className="mb-3">
+          <input
             value={email}
             name="email"
             onChange={handleInputChange}
             onBlur={handleClickAway}
             type="text"
             placeholder="email"
-        />
-        <input
+            className="form-control"
+          />
+        </div>
+        <div className="mb-3">
+          <input
             value={message}
             name="message"
             onChange={handleInputChange}
             onBlur={handleClickAway}
             type="text"
             placeholder="message"
-        />
-        <button type="submit">Submit</button>
-        </form>
-        {errorMessage && (
-            <p>{errorMessage}</p>
-        )}
+            className="form-control"
+          />
+        </div>
+        <button type="submit" className="btn btn-primary">Submit</button>
+      </form>
+      {errorMessage && (
+        <p className="text-danger">{errorMessage}</p>
+      )}
     </>
   );
 }

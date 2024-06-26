@@ -1,8 +1,8 @@
 export default function ResumePage() {
     return (
-        <>
+        <div className="container">
             <h2>Resume</h2>
-            <a href="https://drive.google.com/file/d/1Z26ib01Ofruc-f3bH02qp2s57oM_X3gD/view?usp=sharing">Finn's resume</a>
+            <a href="https://drive.google.com/file/d/1Z26ib01Ofruc-f3bH02qp2s57oM_X3gD/view?usp=sharing" target="_blank">Finn's resume</a>
             <h3>Skills</h3>
             <ul>
                 <li>Responsive Web Design - HTML, CSS, & JavaScript</li>
@@ -20,6 +20,6 @@ export default function ResumePage() {
                 <li>Videography/photography with a Sony NX5 or DSLR camera</li>
                 <li>Social Media Management - Instagram, Twitter (X), LinkedIn, Facebook, Tik Tok, HootSuite</li>
             </ul>
-        </>
+        </div>
     );
 }
