@@ -1,0 +1,12 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "../node_modules/bootstrap/scss/functions";
+
+// Default variable overrides
+$body-bg: #000;
+$body-color: #fff;
+
+body {
+    background-color: $body-bg;
+    color: $body-color;
+}

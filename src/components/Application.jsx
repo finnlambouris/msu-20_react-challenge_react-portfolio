@@ -54,15 +54,21 @@ const applications = [
 
 export default function Application() {
   return (
-    <ul className="row g-4 list-unstyled">
-      {applications.map((app) => (
-        <li className="col-md-4" key={app.title}>
-          <h3>{app.title}</h3>
-          <img src={app.photo} alt={`A photo of ${app.title}`} className="img-fluid" /> {/* Responsive image */}
-          <p><a href={app.deployedLink} className="btn btn-primary">Deployed Application</a></p>
-          <p><a href={app.githubLink} className="btn btn-primary">GitHub Repository</a></p>
-        </li>
-      ))}
-    </ul>
+<div className="row row-cols-md-2 g-4">
+  {applications.map((app) => (
+    <div className="col" key={app.title}>
+      <div className="card h-100">
+        <div className="card-body d-flex flex-column justify-content-center align-items-center">
+          <h3 className="text-center">{app.title}</h3>
+          <img src={app.photo} alt={`A photo of ${app.title}`} className="img-fluid mb-3" />
+          <div className="d-flex w-100 justify-content-center">
+            <p><a href={app.deployedLink} className="btn btn-primary mx-2 my-1">Deployed Application</a></p>
+            <p><a href={app.githubLink} className="btn btn-primary mx-2 my-1">GitHub Repository</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
   );
 }
