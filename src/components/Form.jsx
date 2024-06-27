@@ -51,7 +51,7 @@ function Form() {
 
   return (
     <>
-      <form onSubmit={handleFormSubmit} className="form-group">
+      <form onSubmit={handleFormSubmit} className="form-group" id="contact-form">
         <div className="mb-3">
           <input
             value={name}
@@ -85,7 +85,7 @@ function Form() {
             className="form-control"
           />
         </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <button type="submit" id="form-btn" className="btn btn-primary">Submit</button>
       </form>
       {errorMessage && (
         <p className="text-danger">{errorMessage}</p>

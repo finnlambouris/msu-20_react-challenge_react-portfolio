@@ -4,7 +4,7 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
-        "dev": "vite",
+        "dev": "concurrently \"npm run watch-sass\" \"vite\"",
         "build": "vite build",
         "watch-sass": "node_modules/.bin/sass --watch ./scss/custom.scss ./public/css/custom.css"
     },

@@ -1,0 +1,26 @@
+#resume-h2 {
+    margin-bottom: 10px;
+}
+
+#resume-btn,
+#form-btn {
+    background-color: #5EFC8D;
+    color: #394053;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#resume-btn:hover,
+#form-btn:hover {
+    background-color: #C9DAEA;
+    color: #394053;
+    border: none;
+}
+
+#contact-form input {
+    background-color: white;
+    color: #394053;
+}

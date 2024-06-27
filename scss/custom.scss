@@ -3,10 +3,50 @@
 @import "../node_modules/bootstrap/scss/functions";
 
 // Default variable overrides
-$body-bg: #000;
-$body-color: #fff;
+$primary: #5EFC8D;
+$secondary: #394053;
+$tertiary: #C9DAEA;
 
-body {
-    background-color: $body-bg;
-    color: $body-color;
+$body-bg: $secondary;
+$body-color: white;
+$link-color: $tertiary;
+$link-active-color: $primary;
+$link-hover-color: $primary;
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
 }
+
+.nav-pills {
+    .nav-link.active {
+      background-color: $primary;
+      color: $secondary;
+    }
+}
+
+.card-body {
+    background-color: $tertiary;
+    color: $secondary;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+.btn-primary {
+    background-color: $primary;
+    color: $secondary;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: $secondary;
+    color: white;
+    border: none;
+}
+
+// Required
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";

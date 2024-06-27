@@ -62,8 +62,8 @@ export default function Application() {
           <h3 className="text-center">{app.title}</h3>
           <img src={app.photo} alt={`A photo of ${app.title}`} className="img-fluid mb-3" />
           <div className="d-flex w-100 justify-content-center">
-            <p><a href={app.deployedLink} className="btn btn-primary mx-2 my-1">Deployed Application</a></p>
-            <p><a href={app.githubLink} className="btn btn-primary mx-2 my-1">GitHub Repository</a></p>
+            <p><a href={app.deployedLink} target="_blank" className="btn btn-primary mx-2 my-1">Deployed Application</a></p>
+            <p><a href={app.githubLink} target="_blank" className="btn btn-primary mx-2 my-1">GitHub Repository</a></p>
           </div>
         </div>
       </div>
