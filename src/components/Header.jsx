@@ -11,7 +11,7 @@ export default function Header() {
           <li className="nav-item">
             <Link
               to="/about"
-              className={currentPage === '/about' ? 'nav-link active' : 'nav-link'}
+              className={currentPage === '/' ? 'nav-link active' : currentPage === '/about' ? 'nav-link active' : 'nav-link'}
             >
               About
             </Link>
