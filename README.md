@@ -6,8 +6,8 @@ I WANT to view a potential employee's deployed React portfolio of work samples<b
 SO THAT I can assess whether they're a good candidate for an open position
 
 ## Deployed Application
-![Application Photo]()
-[Deployed Application]()
+![Application Photo](./public/img/portfolio.png)
+[Deployed Application](https://finn-lambouris-portfolio.netlify.app/)
 
 ## Installation
 N/A
